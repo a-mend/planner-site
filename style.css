@@ -78,3 +78,39 @@ footer a { color: var(--muted); }
   .hero .logo { width: 110px; order: -1; }
   .top nav a { margin-left: 12px; }
 }
+
+/* gumball section */
+:root { --basic: #6b7480; --rare: #2f6fdb; --epic: #8a4fe0; --legendary: #a8730a; }
+@media (prefers-color-scheme: dark) {
+  :root { --basic: #9aa3ad; --rare: #4c8dff; --epic: #a970ff; --legendary: #f5b642; }
+}
+#gumballs { margin-bottom: 48px; }
+#gumballs h3 { font-size: 20px; margin: 36px 0 14px; }
+.lead { font-size: 17px; color: var(--muted); max-width: 44em; margin: 0 0 20px; }
+.gb-shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.gb-shots figure { margin: 0; }
+.gb-shots img { border-radius: 12px; border: 1px solid var(--line); box-shadow: 0 8px 28px rgba(0,0,0,.16); }
+.gb-shots figcaption { text-align: center; color: var(--muted); font-size: 14px; margin-top: 8px; }
+.px { image-rendering: pixelated; image-rendering: crisp-edges; }
+.roster { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 760px) { .roster { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); } }
+.sprite { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 10px 12px;
+          display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px; }
+.sprite .px { height: 64px; width: auto; margin-bottom: 8px; }
+.sprite b { font-size: 15px; color: var(--text); }
+.sprite span { font-size: 13px; font-weight: 600; }
+.sprite.legendary { border-color: var(--legendary); }
+.basic { color: var(--basic); } .rare { color: var(--rare); } .epic { color: var(--epic); } .legendary span, span.legendary { color: var(--legendary); }
+.sprite.rare span { color: var(--rare); } .sprite.epic span { color: var(--epic); } .sprite.basic span { color: var(--basic); }
+.odds { color: var(--muted); font-size: 14px; font-weight: 600; margin: 12px 0 0; }
+.merge { display: flex; flex-wrap: wrap; gap: 12px 40px; margin-bottom: 14px; }
+.merge .step { display: flex; align-items: center; gap: 10px; background: var(--card); border: 1px solid var(--line);
+               border-radius: 12px; padding: 12px 16px; }
+.merge .px { height: 45px; width: auto; }
+.merge span { color: var(--muted); font-size: 20px; }
+.merge em { font-style: normal; color: #e0a220; font-size: 15px; margin-left: 4px; }
+@media (max-width: 640px) {
+  .gb-shots { grid-template-columns: minmax(0, 1fr); max-width: 360px; margin: 0 auto; }
+  .merge .step { gap: 6px; padding: 10px 12px; }
+  .merge .px { height: 36px; }
+}

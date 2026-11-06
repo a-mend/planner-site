@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>OnTrack: Tasks & Calendar</title>
-  <meta name="description" content="OnTrack is a free Windows app for tasks and events. Type in plain English, see your week at a glance, and optionally sync events with Google Calendar.">
+  <meta name="description" content="OnTrack is a free Windows app for tasks and events. Type in plain English, see your week at a glance, and optionally sync events with Google Calendar. Finished tasks earn gumballs with collectible pixel buddies.">
   <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -14,6 +14,7 @@
       <a class="brand" href="./"><img src="assets/icon-120.png" alt="">OnTrack</a>
       <nav>
         <a href="#features">Features</a>
+        <a href="#gumballs">Gumballs</a>
         <a href="#google">Google Calendar</a>
         <a href="privacy.html">Privacy</a>
       </nav>
@@ -31,7 +32,7 @@
       </section>
 
       <img class="shot" src="assets/screenshot.png" width="1440" height="860"
-           alt="OnTrack showing a task list on the left and a weekly calendar of events on the right">
+           alt="OnTrack showing a task list on the left, a weekly calendar on the right, and pixel buddies hopping along the bottom">
 
       <section id="features">
         <h2>What it does</h2>
@@ -57,10 +58,46 @@
             <p>Everything is saved in a file on your computer. There's no OnTrack account and no OnTrack server.</p>
           </div>
           <div class="card">
+            <h3>Gumball buddies</h3>
+            <p>Every 5 finished tasks earns a gumball with a collectible pixel pet inside. Buddies hop around your window while you work.</p>
+          </div>
+          <div class="card">
             <h3>Themes</h3>
             <p>Dark, Warm or Light, plus import and export of standard .ics calendar files.</p>
           </div>
         </div>
+      </section>
+
+      <section id="gumballs">
+        <h2>Finish tasks, earn gumballs</h2>
+        <p class="lead">Every 5 tasks you check off earns a gumball. Grab the crank, give it a turn, and out pops a pixel buddy that hops along the bottom of your OnTrack window. Click a buddy and it jumps with a little heart. Your first gumball is free.</p>
+        <div class="gb-shots">
+          <figure><a href="assets/gb-machine.png"><img src="assets/gb-machine.png" width="560" height="700" alt="The gumball machine, with a crank to turn"></a><figcaption>Turn the crank</figcaption></figure>
+          <figure><a href="assets/gb-reveal.png"><img src="assets/gb-reveal.png" width="560" height="700" alt="A new Epic Axolotl revealed from a gumball"></a><figcaption>See who's inside</figcaption></figure>
+          <figure><a href="assets/gb-collection.png"><img src="assets/gb-collection.png" width="560" height="700" alt="The collection: 10 sprites with rarities and stars"></a><figcaption>Fill your collection</figcaption></figure>
+        </div>
+
+        <h3>Collect all 10</h3>
+        <ul class="roster">
+          <li class="sprite basic"><img class="px" src="assets/sprites/frog-1.png" width="64" height="52" alt="Frog"><b>Frog</b><span>Basic</span></li>
+          <li class="sprite basic"><img class="px" src="assets/sprites/duck-1.png" width="64" height="60" alt="Duck"><b>Duck</b><span>Basic</span></li>
+          <li class="sprite basic"><img class="px" src="assets/sprites/mouse-1.png" width="64" height="60" alt="Mouse"><b>Mouse</b><span>Basic</span></li>
+          <li class="sprite basic"><img class="px" src="assets/sprites/goldfish-1.png" width="64" height="48" alt="Goldfish"><b>Goldfish</b><span>Basic</span></li>
+          <li class="sprite rare"><img class="px" src="assets/sprites/dragon-1.png" width="64" height="60" alt="Tiny Dragon"><b>Tiny Dragon</b><span>Rare</span></li>
+          <li class="sprite rare"><img class="px" src="assets/sprites/ghost-1.png" width="64" height="56" alt="Ghost"><b>Ghost</b><span>Rare</span></li>
+          <li class="sprite rare"><img class="px" src="assets/sprites/fox-1.png" width="64" height="60" alt="Fox"><b>Fox</b><span>Rare</span></li>
+          <li class="sprite epic"><img class="px" src="assets/sprites/axolotl-1.png" width="64" height="60" alt="Axolotl"><b>Axolotl</b><span>Epic</span></li>
+          <li class="sprite epic"><img class="px" src="assets/sprites/retriever-1.png" width="64" height="64" alt="Golden Retriever"><b>Golden Retriever</b><span>Epic</span></li>
+          <li class="sprite legendary"><img class="px" src="assets/sprites/cat-1.png" width="72" height="60" alt="Black Cat"><b>Black Cat</b><span>Legendary</span></li>
+        </ul>
+        <p class="odds"><span class="basic">Basic 60%</span> · <span class="rare">Rare 28%</span> · <span class="epic">Epic 10%</span> · <span class="legendary">Legendary 2%</span></p>
+
+        <h3>Stars and trading up</h3>
+        <div class="merge">
+          <div class="step"><img class="px" src="assets/sprites/fox-1.png" width="48" height="45" alt="1-star Fox"><span>+</span><img class="px" src="assets/sprites/fox-1.png" width="48" height="45" alt="1-star Fox"><span>→</span><img class="px" src="assets/sprites/fox-2.png" width="48" height="45" alt="2-star Fox"><em>★★☆</em></div>
+          <div class="step"><img class="px" src="assets/sprites/fox-2.png" width="48" height="45" alt="2-star Fox"><span>+</span><img class="px" src="assets/sprites/fox-2.png" width="48" height="45" alt="2-star Fox"><span>→</span><img class="px" src="assets/sprites/fox-3.png" width="48" height="45" alt="3-star Fox"><em>★★★</em></div>
+        </div>
+        <p class="prose">Every sprite comes out at 1★. Two of the same star level merge into the next, and each star unlocks new colours. Once you have a 3★, any more count as extras: collect 5 extras in one rarity and trade them for a random sprite of the next rarity. Choose up to three buddies to show on screen (or none) in Settings.</p>
       </section>
 
       <section id="google" class="prose">
