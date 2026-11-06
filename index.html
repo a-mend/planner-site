@@ -123,7 +123,7 @@
     </footer>
   </div>
 
-  <dialog id="viewer" aria-label="Screenshot">
+  <dialog id="viewer" aria-label="Screenshot" tabindex="-1">
     <button class="close" type="button" aria-label="Close">&times;</button>
     <img alt="">
   </dialog>
@@ -140,6 +140,7 @@
           img.src = link.href;
           img.alt = shot ? shot.alt : "";
           viewer.showModal();
+          viewer.focus();     // no focus ring on the X when opened with the mouse
         });
       });
       viewer.querySelector(".close").addEventListener("click", function () { viewer.close(); });
